@@ -1,11 +1,16 @@
 import './App.css'
-import World from "./World"
+import React from "react";
+import Header from "./components/header";
+import Footer from "./components/footer";
+import Contents from "./components/contents";
 
 function App() {
 
   return (
       <div>
-        Hello
+        <Header />
+        <Contents />
+        <Footer />
       </div>
   )
 }
