@@ -1,7 +1,9 @@
 const Header = () => {
     return (
         <div>
-            My AB Calculator
+            <h1 className = "header-title">
+                My AB Calculator
+            </h1>
         </div>
     )
 }
