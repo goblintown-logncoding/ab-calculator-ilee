@@ -13,10 +13,9 @@ const Contents = () => {
         const valueB = +inputBRef.current.value;
         console.log(valueA + valueB);
         if (operationState === "+") {setResultState(valueA + valueB)}
-        if (operationState === "-") {setResultState(valueA - valueB)}
-        if (operationState === "*") {setResultState(valueA * valueB)}
-        if (operationState === "/") {setResultState(valueA / valueB)}
-
+        else if (operationState === "-") {setResultState(valueA - valueB)}
+        else if (operationState === "*") {setResultState(valueA * valueB)}
+        else {setResultState(valueA / valueB)}
     }
 
     return (
